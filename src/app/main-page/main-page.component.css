@@ -1,0 +1,11 @@
+.container{
+    width: 90vw;
+}
+.smallBlock{
+    padding: 2px 2px 10px 2px;
+    margin: 0 10px 15px 10px;
+    background-color: #ffffff;
+    min-height: 20px;
+    width: 1000px;
+    border: 1px solid black;
+}

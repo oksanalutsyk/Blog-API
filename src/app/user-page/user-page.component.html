@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="title">All posts of <i>{{ this.authorId }}</i></div>
+  <div
+    class="smallBlock"
+    *ngFor="let item of posts | userPost: authorId; let i = index"
+  >
+    <p>Post № {{ i + 1 }}</p>
+    <p class="name" (click)="this.getUser($event)" id="{{ item.author }}">
+      Author: {{ item.author }}
+    </p>
+    <p class="name">Post id: {{ item.id }}</p>
+    <p class="name">Post title: {{ item.title }}</p>
+    <p class="name">Post text: {{ item.body }}</p>
+  </div>
+</div>
